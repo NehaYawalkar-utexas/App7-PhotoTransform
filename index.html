@@ -104,7 +104,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
           /* PUT ANY CHANGES TO THE JAVASCRIPT HERE  */
          
          
-         
+        /* 
          function drawImage(imageObj) {
         var canvas = document.getElementById('myCanvas');
         var context = canvas.getContext('2d');
@@ -114,8 +114,10 @@ console.log("This file last modified " + docMod); // generates message in javaSc
         var imageHeight = imageObj.height;
 
         context.drawImage(imageObj, imageX, imageY);
+        
+        */
 
-        var imageData = context.getImageData(imageX, imageY, imageWidth, imageHeight);
+        var imageData = ctx.getImageData(imageX, imageY, imageWidth, imageHeight);
         var data = imageData.data;
 
         // iterate over all pixels
@@ -158,7 +160,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
         }
 
         // overwrite original image
-        context.putImageData(imageData, x, y);
+        ctx2.putImageData(imageData, x, y);
       }
       
       var imageObj = new Image();
@@ -211,7 +213,11 @@ console.log("This file last modified " + docMod); // generates message in javaSc
       <div id="messageDisplayArea"></div>
       
       <canvas id="myCanvas" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas>
-      <script> /* This script initiates the cavas and puts the text on the canvas "myCanvas" */
+      
+     
+     <!-- /header 
+     
+     <script> /* This script initiates the cavas and puts the text on the canvas "myCanvas" */
         var canvas = document.getElementById('myCanvas');
         var context = canvas.getContext("2d");
         context.font = '20pt Calibri';
@@ -227,6 +233,8 @@ console.log("This file last modified " + docMod); // generates message in javaSc
         context2.fillStyle = "black";
         context2.fillText("New image will go here", 10, 20);
       </script>
+
+-->
 
     </div><!-- /content -->
     <div data-role="footer" data-position="fixed">
