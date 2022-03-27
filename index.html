@@ -96,9 +96,7 @@
 
           /*  +++++++++++++++ BEGIN IMAGE PROCESSING +++++++++++++++ */
           /*  ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-        var canvas2 = document.getElementById('myCanvas2');
-        var context2 = canvas2.getContext('2d');
+         /* PUT ANY CHANGES TO THE JAVASCRIPT HERE  */
         var x = 0;
         var y = 0;
         var imageData = context.getImageData(x, y, img.width, img.height);
@@ -113,11 +111,6 @@
         
         // overwrite original image
         context2.putImageData(imageData, x, y); 
-      
-          /* PUT ANY CHANGES TO THE JAVASCRIPT HERE  */
-          
-          
-          
           
         } // end of img.onload
         
